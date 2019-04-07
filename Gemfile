@@ -28,7 +28,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'nokogiri'
 gem 'rails-i18n'
-
+gem 'kaminari'
+gem 'date_validator'
+gem 'email_validator'
+gem 'jquery-rails'
+gem 'jquery-ui-rails', '~> 4.2.1'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -60,8 +64,9 @@ group :test do
   gem 'chromedriver-helper'
   gem 'rspec-rails', '~> 3.7'
   gem 'spring-commands-rspec'
-  gem 'factory_girl_rails'
+  gem 'factory_bot_rails'
   gem 'database_cleaner'
+  gem 'rails-controller-testing'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

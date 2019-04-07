@@ -14,13 +14,7 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-  # 下記のモジュールで定義されているcreateやbuildなどのメソッドをテスト内で使用かにする
-  config.include FactoryGirl::Syntax::methods
-
-  # bin/specの実行対象となっているエグザンプルの集合（スイート）の前にすべき処理（テスト前の準備）
-  config.before(:suite) do
-    FactoryGirl.reload
-  end
+  config.include FactoryBot::Syntax::Methods
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
   # assertions if you prefer.

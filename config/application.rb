@@ -15,10 +15,10 @@ module Baukis
     config.time_zone = 'Tokyo'
 
     # 複数のロケールファイルを読み込み可能に変更（config/localesディレクトリ以下を再帰的に読み込むため）
-    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb.yml}').to_s]
+    # config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb.yml}').to_s]
 
     # デフォルトのlocaleを日本語にする
-    config.i18n.default_locale = :ja
+    # config.i18n.default_locale = :ja
 
     # 自動Generatorをカスタマイズ
     config.generators do |g|
